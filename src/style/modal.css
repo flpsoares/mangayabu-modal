@@ -1,0 +1,108 @@
+.modalContainer {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.modalOverlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalOverlayBackdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+}
+
+.modalOverlayBody {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow-y: auto;
+  z-index: 6;
+}
+
+.modalBox {
+  border-radius: 5px;
+  padding: 32px 48px;
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  width: 80%;
+}
+
+.modalBoxHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.playstore {
+  width: 200px;
+  object-fit: cover;
+}
+
+.text {
+  margin-top: 18px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.modalCloseButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 14px;
+  height: 14px;
+
+  background: transparent;
+  border: 0;
+
+  color: white;
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition: filter 0.2s;
+}
+
+.modalCloseButton {
+  filter: brightness(0.8);
+}
+
+@media (max-width: 511px) {
+  .modalBoxHeader {
+    flex-direction: column;
+    gap: 24px;
+  }
+}

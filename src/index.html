@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="style/modal.css" />
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+  <script src="script/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.4/mobile-detect.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <title>Modal</title>
+</head>
+<body>
+  <div class="modalContainer">
+    <div class="modalOverlayBackdrop">
+      <div class="modalOverlayBody" onclick="closeModalClickingInOverlay(event)">
+        <div class="modalBox">
+          <button class="modalCloseButton" onclick="closeModal()" type="button">
+            x
+          </button>
+          <div class="modalBoxHeader">
+            <img class="logo" src="/public/assets/logo.png" alt="logo">
+            <a href="https://play.google.com/store/apps/details?id=com.mangayabu">
+              <img class="playstore" src="/public/assets/playstore.png" alt="playstore">
+            </a>
+          </div>
+          <p class="text">Para ter uma melhor experiência, use o nosso aplicativo que já está disponível na loja!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

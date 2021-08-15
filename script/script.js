@@ -15,7 +15,7 @@ function verifyCookie() {
 
 function detectMobile() {
   if(new MobileDetect(window.navigator.userAgent).os() == 'AndroidOS') {
-    // Cookies.set('alreadySeenModal', true)
+    Cookies.set('alreadySeenModal', true)
     openModal()
   } 
 }
